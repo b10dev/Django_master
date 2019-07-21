@@ -187,7 +187,9 @@ going to be a h1 tag for now.
 from django.shortcuts import render
 from django.http import HttpResponse <------------------
 def home(request):
-    return HttpResponse('<h1>Blog home</h1>')
+    return HttpResponse("<{h1 tag}>Blog home<{h1 tag}>")    
 </pre>
+<small>*note the {h1 tag} is actually the literal h1 tag, but the markdown file 
+will not display it properly so I had to substitute it with something it wouldnt.</small> 
 </p>
 <h3>CS Vid 2 end</h3>
